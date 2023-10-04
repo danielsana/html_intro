@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moving animation</title>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+        .grass, .sky, .road{
+            position: relative;
+        }
+        .sky{
+            height: 40%;
+            background: skyblue;
+        }
+        .grass{
+            height: 30%;
+            background: seagreen;
+        }
+        .road{
+            height: 30%;
+            background: dimgrey;
+            box-sizing: border-box;
+            border-bottom: 10px solid grey;
+            width: 100%;
+        }
+        .lines{
+            box-sizing: border-box;
+            border: 5px dashed #fff;
+            height: 0px;
+            width: 100%;
+            position: absolute;
+            top: 45%;
+        }
+        .mario{
+            position: absolute;
+            top: -40%;
+            left: 0px;
+            animation-name: drive;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .luigi{
+            position: absolute;
+            top: 30%;
+            left: 0px;
+            animation-name: drive;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes drive{
+            from{transform: translateX(-200);}
+            to{transform: translateX(800px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="sky">
+        <img src="img/cloud.png" alt="">
+        <img src="img/cloud.png" alt="">
+    </div>
+    <div class="grass"></div>
+    <div class="road">
+        <div class="lines"></div>
+        <img class="mario" src="img/mario.png" alt="">
+        <img class="luigi" src="img/luigi.png" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: lightblue;
+            text-align: center;
+        }
+        .wrapper{
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            /* background: #555; */
+        }
+        .circle{
+            width: 100px;
+            padding: 50px 0;
+            line-height: 0;
+            margin: 60px auto;
+            background: pink;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: 1s, transform 0.3s;
+        }
+        .circle:hover{
+            background: salmon;
+            transform: rotate(360deg) scale(0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="img/cloud.png" alt="">
+        <div class="circle">
+            Hover Me
+        </div>
+    </div>
+</body>
+</html>

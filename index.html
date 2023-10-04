@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleo</title>
+    <link rel="stylesheet" href="hearts.css">
+    <style>
+    .cards{
+        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px auto;
+        justify-content: center;
+        max-width: 1200px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 24px;
+    }
+    .cards article{
+        max-width: 320px;
+        cursor: pointer;
+        background-color: skyblue;
+        position: relative;
+        display: block;
+        transition: all 0.4s ease-in-out ;
+        overflow: hidden;
+        border-radius: 16px;
+        margin-bottom: 30px;
+    }
+    .cards article a {
+        display: inline-flex;
+        color: crimson;
+        text-decoration: none;
+    }
+    .cards article h2 {
+        margin: 10 0 18px 0;
+        font-size: 1.6rem;
+        color: purple;
+        transition: 0.3s ease-out;
+    }
+    .cards article img {
+        width: 100%;
+        height: 40%;
+        max-width: 100%;
+        transform-origin: center;
+        transition: transform 0.4s ease-in-out;
+    }
+    /* .cards img {
+        height: 70%;
+        overflow: hidden;
+        object-fit: cover;
+    } */
+
+    .cards article:hover img {
+        transform: scale(1.2); 
+    }
+
+    .cards article p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <center>
+    <div class="myheader">
+        <h1>Happy Hearts Advisors</h1>
+        <nav>
+            <a href="hearts.html">Home</a>
+            <a href="#services">Services</a>
+            <a href="">About</a>
+            <a href="signup.html">Join Us</a>
+
+        </nav>
+    </div>
+        <p>
+            Counselling and Psychology is a confidential professional working <br>
+             relationship in which a counsellor or a psychologist <br>
+              gets into a mutual formal agreement to support a client <br>
+               to resolve, manage or cope with issues of life.
+        </p>
+        <p>
+            The Association has a staff which oversees <br>
+            the daily running of the office activities from 8.00 am to 5 pm Mondays to Fridays <br>
+            except on national public holidays.
+        </p>
+        <hr width="80%">
+        <img src="images/counsel one.jpg" alt="" width="40%" height="400px">
+        <img src="images/counsel two.jpg" alt="" width="40%" height="400px">
+        <hr width="80%">
+        <h2>Abraham Maslow quote:
+        </h2>
+        <p>
+            "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail."
+        </p>
+        <img src="images/happy one.jpg" alt="" width="40%" height="400px">
+        <img src="images/happy two.jpg" alt="" width="40%" height="400px">
+
+        <a href="https://www.lek.com/industries/healthcare-services/behavioral-mental-health" style="display: block;" target="_blank"><h3>click here for more.</h3></a>
+
+        <hr width="60%">
+
+        <section id="services">
+        <h2>Our services</h2>
+    
+    <div class="cards">
+        <article>
+            <img src="images/florida.jpg" alt="">
+            <h2>Florida Beach Hotel</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. 
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. 
+            
+                
+                 
+                </p>
+                <a href="#" class="read-more">
+                    Read more
+                </a>
+        </article>
+        <article>
+            <img src="images/nyc.jpg" alt="">
+            <h2>NewYork City</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. 
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. 
+                
+                 
+                </p>
+                <a href="#" class="read-more">
+                    Read more
+                </a>
+        </article>
+        <article>
+            
+                <img
+                src="images/nairobi.jpg" alt=""  
+                />
+           
+                <h2>Nairobi Kenya</h2>               
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. 
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. 
+
+                    
+                </p>
+                <a href="#" class="read-more">
+                    Read more
+                </a>
+            
+        </article>
+        </div>
+        <h2>Our Schedule</h2>
+        <div class="Schedule">
+        <table border="1" width="60%" height="400px">
+            
+                <tr>
+                    <th rowspan="2">Day Of The Week</th>
+                    <th colspan="5">Activities</th>
+                </tr>
+                <tr>
+                    <th>Opening Office</th>
+                    <th>Office Counsultations</th>
+                    <th>HighSchool Counselling Visits</th>
+                    <th>Public Awareness Walks</th>
+                    <th>Closing Office</th>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <td>7:30 AM</td>
+                    <td>8:00 AM</td>
+                    <td>10:00 AM</td>
+                    <td></td>
+                    <td>5:30 PM</td>
+                </tr>
+                <tr>
+                    <th>Teusday</th>
+                    <td>7:30 AM</td>
+                    <td>2:00 pm</td>
+                    <td></td>
+                    <td>8:00 AM</td>
+                    <td>5:30 PM</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>7:30 AM</td>
+                    <td>8:00 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td>5:30 PM</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>7:30 AM</td>
+                    <td>8:00 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td>5:30 PM</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>7:30 AM</td>
+                    <td>8:00 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td>5:30 PM</td>
+                </tr>
+                <tr>
+                    <th>Sartuday</th>
+                    <td colspan="5">Closed</td>
+
+                </tr>
+                <tr>
+                    <th>Sunday</th>
+                    <td colspan="5">Closed</td>
+                    
+                </tr>
+        </table>
+    </div>
+
+</center>
+</body>
+</html>
